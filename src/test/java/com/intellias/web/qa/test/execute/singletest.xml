@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="inteliasQaPattern" verbose="5" data-provider-thread-count="1">
+		<parameter name="desireBrowser" value="null"/>	
+		<parameter name="desireEnvironment" value="null"/>	
+	
+	<test name="qa-pattern">
+<!-- 	    <groups>
+	        <run>
+	            <include name="group1" />
+	        </run>
+	    </groups> -->
+	
+<!-- 		<classes>
+		  <class name="ua.lviv.testers.testcase.testcategories.hometests.HomePageTestSuite"/>
+		  <class name="ua.lviv.testers.testcase.testcategories.logintests.LoginPageTestSuite"/>
+		</classes> -->
+			
+
+		<packages>
+			<package name="com.intellias.web.qa.test.suites" />
+		</packages>
+
+	</test>	  
+</suite>
