@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="inteliasQaPattern" verbose="5" data-provider-thread-count="1">
-		<parameter name="desireBrowser" value="null"/>	
-		<parameter name="desireEnvironment" value="null"/>	
+		<parameter name="desireBrowser" value="CHROME"/>	
+		<parameter name="desireEnvironment" value="REMOTE"/>	
 	
 	<test name="qa-pattern">
 <!-- 	    <groups>

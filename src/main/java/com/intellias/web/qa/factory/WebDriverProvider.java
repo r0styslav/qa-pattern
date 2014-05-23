@@ -22,6 +22,8 @@ import com.intellias.web.qa.configuration.ConfigurationEnvironment;
  */
 public class WebDriverProvider extends WebDriverFactory {
 	
+	final static String localSettingsPath = "src/test/java/com/intellias/web/qa/test/settings/";
+	
 	/**
 	 * Method is used to fetch WebDriver according to browser and environment configuration
 	 * @param configuration - test configurations 
@@ -62,7 +64,6 @@ public class WebDriverProvider extends WebDriverFactory {
 	 */
 	private static WebDriver getLocalWebDriver(Configuration configuration) {
 		WebDriver driver= null;
-		final String localSettingsPath = "src/test/java/com/intellias/web/qa/test/settings/";
 
 		if (configuration.getBrowser().equalsIgnoreCase(ConfigurationBrowser.CHROME.toString())) {
 			System.setProperty("webdriver.chrome.driver", localSettingsPath + "chromedriver.exe");	
