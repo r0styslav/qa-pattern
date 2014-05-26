@@ -8,6 +8,9 @@ import java.util.Properties;
 import org.testng.annotations.Optional;
 
 /**
+ * @author rpash
+ * @version 1.0
+ *  
  * Configuration class 
  * 
  */

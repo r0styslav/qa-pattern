@@ -5,6 +5,9 @@ import org.openqa.selenium.WebDriver;
 import com.intellias.web.qa.configuration.Configuration;
 
 /**
+ * @author rpash
+ * @version 1.0
+ * 
  * Web Driver Class 
  * 
  */

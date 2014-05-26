@@ -6,7 +6,11 @@ import com.intellias.web.qa.configuration.Configuration;
 import com.intellias.web.qa.configuration.ConfigurationBrowser;
 import com.intellias.web.qa.configuration.ConfigurationEnvironment;
 
-
+/**
+ * 
+ * @author rpash
+ * @version 1.0
+ */
 public class ProjectTestSuit extends MainTestSuit {
 	
 	@Test()

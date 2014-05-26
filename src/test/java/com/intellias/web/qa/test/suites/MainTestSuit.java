@@ -13,6 +13,8 @@ import com.intellias.web.qa.configuration.ConfigurationEnvironment;
 import com.intellias.web.qa.factory.WebDriverFactory;
 
 /**
+ * @author rpash
+ * @version 1.0
  * Main test class 
  * 
  */
@@ -34,13 +36,7 @@ public class MainTestSuit {
 		driver.quit();
 	}
 	
-	@DataProvider(name = "provideData")
-	public Object[][] provideData() {
- 
-		return new Object[][] { 
-			{ ConfigurationBrowser.CHROME, ConfigurationEnvironment.LOCAL }
-		};
-	}
+	
 	
 	
 

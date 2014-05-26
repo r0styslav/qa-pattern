@@ -1,27 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="inteliasQaPattern" verbose="5" data-provider-thread-count="2">
-<!-- 		<parameter name="desireBrowser" value="CHROME"/>	
-		<parameter name="desireEnvironment" value="REMOTE"/>	 -->
-	
+<suite name="inteliasQaPattern" verbose="5"
+	data-provider-thread-count="2">
+	<!-- <parameter name="desireBrowser" value="CHROME"/> <parameter name="desireEnvironment" 
+		value="REMOTE"/> -->
+
 	<test name="qa-pattern">
-		<parameter name="desireBrowser" value="CHROME"/>	
-		<parameter name="desireEnvironment" value="LOCAL"/>	
-			
+		<parameter name="desireBrowser" value="CHROME" />
+		<parameter name="desireEnvironment" value="LOCAL" />
+		<classes>
+			<class name="com.intellias.web.qa.test.suites.LoginTestSuite" />
+		</classes>
+	</test>
+	
+<!-- 	<test name="qa-pattern-in-parallel">
+		<parameter name="desireBrowser" value="FF" />
+		<parameter name="desireEnvironment" value="LOCAL" />
+
 
 		<packages>
 			<package name="com.intellias.web.qa.test.suites" />
 		</packages>
 
-	</test>	 
-		<test name="qa-pattern-in-parallel">
-		<parameter name="desireBrowser" value="FF"/>	
-		<parameter name="desireEnvironment" value="LOCAL"/>	
-			
-
-		<packages>
-			<package name="com.intellias.web.qa.test.suites" />
-		</packages>
-
-	</test>	  
+	</test> -->
 </suite>

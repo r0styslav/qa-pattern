@@ -17,6 +17,9 @@ import com.intellias.web.qa.configuration.ConfigurationBrowser;
 import com.intellias.web.qa.configuration.ConfigurationEnvironment;
 
 /**
+ * @author rpash
+ * @version 1.0
+ * 
  * WebDriver data provider Class 
  * 
  */
