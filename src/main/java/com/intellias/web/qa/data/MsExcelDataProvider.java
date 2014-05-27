@@ -8,6 +8,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 
+import org.apache.poi.hssf.usermodel.HSSFCell;
 import org.apache.poi.hssf.usermodel.HSSFRow;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
@@ -80,8 +81,8 @@ public class MsExcelDataProvider extends MainDataProvider {
 
 					switch (row.getCell(i).getCellType()) {
 					case Cell.CELL_TYPE_NUMERIC:
-						fileEntry.put(objectAttributes.get(i), row.getCell(i)
-								.getNumericCellValue());
+						fileEntry.put(objectAttributes.get(i), getCellValueAsString(row.getCell(i)) != null ?
+								 getCellValueAsString(row.getCell(i)) : "");
 						break;
 					case Cell.CELL_TYPE_STRING:
 						fileEntry.put(objectAttributes.get(i), row.getCell(i)
@@ -105,6 +106,10 @@ public class MsExcelDataProvider extends MainDataProvider {
 			System.out.println("Fetched hash map : " + fileEntry);
 		}
 		return result.iterator();
+	}
+	
+	private static String getCellValueAsString (HSSFCell cell) {
+		return String.valueOf(((Double) cell.getNumericCellValue()).intValue());
 	}
 
 }
