@@ -8,22 +8,20 @@ import com.intellias.web.qa.configuration.Configuration;
  * @author rpash
  * @version 1.0
  * 
- * Web Driver Class 
+ *  Class for locators for login
  * 
  */
 public class WebDriverFactory {
 	
 	/**
 	 * Method is used to fetch WebDriver
-	 * @param configuration - test configurations 
+	 * @param configuration - Configuration 
 	 * @return driver - WebDriver
-	 * 
 	 */
 	public static WebDriver getWebDriver (Configuration configuration) {
 		WebDriver driver = null;
 
-		driver = WebDriverProvider.getWebDriver(configuration);
-	
+		driver = WebDriverProvider.getWebDriver(configuration);	
 		return driver;
 	}
 	

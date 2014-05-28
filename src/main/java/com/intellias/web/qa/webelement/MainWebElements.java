@@ -13,8 +13,8 @@ import org.openqa.selenium.WebElement;
  */
 public class MainWebElements {
 	
-	protected static WebDriver webDriver = null;
-	protected static WebElement webElement = null;
+	protected static WebDriver webDriver ;
+	protected static WebElement webElement ;
 	
 	/**
 	 * Initializes the class variables with appropriate WebElement and WebDriver instances

@@ -31,9 +31,8 @@ public class WebDriverProvider extends WebDriverFactory {
 	 * Method is used to fetch WebDriver according to browser and environment configuration
 	 * @param configuration - test configurations 
 	 * @return driver - WebDriver
-	 * 
 	 */
-	public static WebDriver getWebDriver (Configuration configuration) {
+	public static WebDriver getWebDriver(Configuration configuration) {
 		WebDriver driver = null;
 		
 		if (ConfigurationEnvironment.LOCAL.toString().equalsIgnoreCase(configuration.getDriverMode())) {
@@ -107,7 +106,7 @@ public class WebDriverProvider extends WebDriverFactory {
 
 	/**
 	 * Method is used to fetch DesiredCapabilities for remote tests
-	 * @param configuration - test configurations 
+	 * @param configuration - Configuration 
 	 * @return capabilities - DesiredCapabilities
 	 * 
 	 */

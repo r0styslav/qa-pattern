@@ -22,8 +22,7 @@ public class LoginTestSuite extends LoginPageObjectTestSuite {
 	/**
 	 * Test check case when user login with correct credentials
 	 * 
-	 * @param Username
-	 *            , User password, expected validation message
+	 * @param data
 	 * @return assert true or false
 	 * @throws InterruptedException
 	 * @throws error

@@ -27,11 +27,10 @@ import com.intellias.web.qa.configuration.Configuration;
 
 public class MsExcelDataProvider extends MainDataProvider {
 	/**
-	 * Method is used to fetch test configuration
+	 * Method is used to fetch test configuration from file
 	 * 
-	 * @param filePath - path to excel file
-	 * @return configuration - environment and browser setup
-	 * 
+	 * @param fileName - name of excel file
+	 * @return result - ArrayList with excel content
 	 */
 	public static Iterator<Object[]> getMsExcelData(String fileName)
 			throws IOException {
@@ -108,6 +107,12 @@ public class MsExcelDataProvider extends MainDataProvider {
 		return result.iterator();
 	}
 	
+	/**
+	 * Method is used to fetch test configuration from file
+	 * 
+	 * @param cell - HSSFCell 
+	 * @return String - numeric cell converted into string
+	 */
 	private static String getCellValueAsString (HSSFCell cell) {
 		return String.valueOf(((Double) cell.getNumericCellValue()).intValue());
 	}

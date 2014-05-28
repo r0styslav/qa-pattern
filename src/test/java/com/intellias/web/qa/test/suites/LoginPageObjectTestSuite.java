@@ -20,7 +20,7 @@ public class LoginPageObjectTestSuite extends MainTestSuit {
 
 	protected void loginToFrontendPage(String userName, String password) throws InterruptedException {
 		driver.get(configuration.getFrontendUrl());
-		webElement = IndexLoginFrontendPage.getLoginFieldById(driver,
+		webElement = IndexLoginFrontendPage.getLoginFieldByCssName(driver,
 				LoginElementsName.USERNAME);
 		webElement.clear();
 		System.out.println("userName - " + userName);
@@ -30,7 +30,7 @@ public class LoginPageObjectTestSuite extends MainTestSuit {
 		webElement.clear();
 		System.out.println("password - " + password);
 		webElement.sendKeys(password);
-		webElement = IndexLoginFrontendPage.getLoginButtonById(driver);
+		webElement = IndexLoginFrontendPage.getLoginButtonByXpathId(driver);
 		webElement.click();
 		Thread.sleep(5000);
 	}
